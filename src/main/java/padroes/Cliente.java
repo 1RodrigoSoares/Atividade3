@@ -21,6 +21,6 @@ public class Cliente implements Observer {
 
     public void update(Observable pagamento, Object arg1) {
         Pagamento p = (Pagamento) pagamento;
-        this.ultimaNotificacao = this.nome + ", pagamento " + p.getCodigo() + " foi " + p.getEstado();
+        this.ultimaNotificacao = this.nome + ", o pagamento " + p.getCodigo() + " está como pago";
     }
 }

@@ -7,6 +7,7 @@ public class PagamentoEstadoAguardando extends PagamentoEstado{
         return instance;
     }
 
+    @Override
     public String getEstado() {
         return "Aguardando";
     }

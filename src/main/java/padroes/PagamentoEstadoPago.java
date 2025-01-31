@@ -7,6 +7,7 @@ public class PagamentoEstadoPago extends PagamentoEstado{
         return instance;
     }
 
+    @Override
     public String getEstado() {
         return "Pago";
     }

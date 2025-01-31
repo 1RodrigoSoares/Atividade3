@@ -7,6 +7,7 @@ public class PagamentoEstadoReembolsado extends PagamentoEstado{
         return instance;
     }
 
+    @Override
     public String getEstado() {
         return "Reembolsado";
     }

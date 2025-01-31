@@ -19,7 +19,6 @@ public abstract class PagamentoEstado {
         return false;
     }
 
-
     public boolean concluirReembolso(Pagamento pagamento) {
         return false;
     }

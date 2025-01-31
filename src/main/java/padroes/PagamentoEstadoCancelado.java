@@ -7,6 +7,7 @@ public class PagamentoEstadoCancelado extends PagamentoEstado{
         return instance;
     }
 
+    @Override
     public String getEstado() {
         return "Cancelado";
     }

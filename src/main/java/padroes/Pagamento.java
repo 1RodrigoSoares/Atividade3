@@ -28,14 +28,13 @@ class Pagamento extends Observable {
     }
 
     public boolean pagar () {
+        boolean resultado = this.estado.pagar(this);
         this.setChanged();
         this.notifyObservers();
-        return this.estado.pagar(this);
+        return resultado;
     }
 
     public boolean cancelar () {
-        this.setChanged();
-        this.notifyObservers();
         return this.estado.cancelar(this);
     }
 
